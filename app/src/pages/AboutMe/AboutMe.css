@@ -1,0 +1,41 @@
+@keyframes slice {
+	0%,
+	16.67% {
+		transform: translateY(0em);
+	}
+	16.67%,
+	33.34% {
+		transform: translateY(-2.2em);
+	}
+	33.34%,
+	50.1% {
+		transform: translateY(-4.2em);
+	}
+	50.1%,
+	66.68% {
+		transform: translateY(-6.2em);
+	}
+	66.68%,
+	83.35% {
+		transform: translateY(-8.2em);
+	}
+	83.35%,
+	100% {
+		transform: translateY(-10.2em);
+	}
+}
+
+/* .vcarrousel__content {
+	height: 2rem;
+	overflow: hidden;
+} */
+
+.vcarrousel__container {
+	/* padding-top: 2rem; */
+	animation: slice 15s ease-in-out infinite;
+}
+
+.vcarrousel__item {
+	line-height: 2rem;
+	margin: 0;
+}
