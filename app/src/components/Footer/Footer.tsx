@@ -6,25 +6,34 @@ import { Button } from '../Button';
 const contactLinks = [
 	{
 		label: 'LinkedIn',
-		href: 'https://www.linkedin.com/in/username',
+		href: 'https://www.linkedin.com/in/macochave',
 		variant: 'primary',
+		icon: 'fab fa-linkedin-in',
 	},
 	{
 		label: 'GitHub',
-		href: 'https://www.github.com/username',
+		href: 'https://www.github.com/macochave',
 		variant: 'secondary',
+		icon: 'fab fa-github',
 	},
 	{
 		label: 'YouTube',
-		href: 'https://www.youtube.com/username',
+		href: 'https://www.youtube.com/@macochave',
 		variant: 'danger',
+		icon: 'fab fa-youtube',
 	},
 	{
-		labe: 'Blogspot',
-		href: 'https://www.blogspot.com/username',
+		label: 'Blogspot',
+		href: 'https://macochave.blogspot.com',
 		variant: 'warning',
+		icon: 'fab fa-blogger-b',
 	},
-	{ label: 'Email', href: 'mailto:macochave@gmail.com', variant: 'danger' },
+	// {
+	// 	label: 'Email',
+	// 	href: 'mailto:macochave@gmail.com',
+	// 	variant: 'danger',
+	// 	icon: 'fa-solid fa-inbox',
+	// },
 ];
 
 export type FooterProps = {
@@ -44,16 +53,15 @@ const Footer: React.FC<FooterProps> = ({}) => {
 							target='_blank'
 							rel='noopener noreferrer'>
 							<Button
-								label={link?.label ?? ''}
-								variant={link.variant as any}
-								onClick={() => {}}
+								label={link.label}
+								startElement={<i className={`${link.icon}`} />}
+								isFab={true}
 							/>
 						</a>
 					))}
 				</div>
 				<p className='mt-4 text-sm text-gray-400'>
-					&copy; {new Date().getFullYear()} Marco Chávez. All rights
-					reserved.
+					&copy; 2025 Marco Chávez. All rights reserved.
 				</p>
 			</div>
 		</div>
