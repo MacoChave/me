@@ -42,7 +42,7 @@ export type FooterProps = {
 
 const Footer: React.FC<FooterProps> = ({}) => {
 	return (
-		<div className='bg-gray-800 text-white py-6'>
+		<div className='h-80 bg-gray-800 text-white py-6 flex flex-col place-content-center place-items-center'>
 			<div className='container mx-auto text-center'>
 				<p className='text-lg mb-4'>Connect with me:</p>
 				<div className='flex justify-center space-x-4'>
@@ -53,6 +53,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
 							target='_blank'
 							rel='noopener noreferrer'>
 							<Button
+								variant={link.variant as any}
 								label={link.label}
 								startElement={<i className={`${link.icon}`} />}
 								isFab={true}

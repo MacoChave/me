@@ -10,21 +10,23 @@ const AboutMe: React.FC<AboutMeProps> = ({}) => {
 	return (
 		<div className='aboutme__container'>
 			<p>
-				Soy estudiante con cierre en Ingeniería en Ciencias y Sistemas
+				I'm a student nearing graduation in System and Computer Science
+				Engineering from Guatemala
 			</p>
 			<p>
-				Soy de Guatemala y me gusta diseñar interfaces gráficas,
-				desarrollar aplicaciones, jugar videojuegos y explorar nuevas
-				tecnologías y lenguajes
+				I enjoy designing graphical interfaes, developing applications,
+				playing video games and learning new technologies in my free
+				time
 			</p>
 			<p>
-				Soy un entusiasta de la enseñanza, orientación a soluciones y
-				ayuda a compañeros / colegas que lo necesiten
+				I am passionate about teaching and sharing my knowledge with
+				others to help them learn and grow in the field of technology
+				and programming
 			</p>
 			<p>
-				Trato de compartir mis conocimientos que he adquirido en mi
-				canal de YouTube y/o publicar posts en mi Blog para que así, mis
-				conocimientos lleguen a más personas con acceso a internet
+				I strive to share my knowledge and experience with others to
+				help them learn and grow in the field of technology and
+				programming in my YouTube channel and blog posts
 			</p>
 		</div>
 	);

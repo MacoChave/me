@@ -9,30 +9,42 @@ export type KnowledgesProps = {
 
 const Knowledges: React.FC<KnowledgesProps> = ({}) => {
 	return (
-		<div className='knowledges'>
+		<div className='flex flex-wrap place-content-around gap-8'>
 			<FlipCard
 				title='Frontend'
 				description="I have experience in frontend development using React and Angular as library / framework, and TailwindCSS, Material UI, Angular Material as a styling framework. Additionally, I'm proficient in HTML, CSS, and JavaScript."
 				images={[
-					{ name: 'HTML', url: 'https://lorempixel.com/200/200' },
-					{ name: 'CSS', url: 'https://lorempixel.com/200/200' },
+					{
+						name: 'HTML',
+						url: 'https://img.icons8.com/color/48/000000/html-5--v1.png',
+					},
+					{
+						name: 'CSS',
+						url: 'https://img.icons8.com/color/48/000000/css3.png',
+					},
 					{
 						name: 'JavaScript',
-						url: 'https://lorempixel.com/200/200',
+						url: 'https://img.icons8.com/color/48/000000/javascript--v1.png',
 					},
-					{ name: 'React', url: 'https://lorempixel.com/200/200' },
-					{ name: 'Angular', url: 'https://lorempixel.com/200/200' },
+					{
+						name: 'React',
+						url: 'https://img.icons8.com/ultraviolet/40/000000/react--v1.png',
+					},
+					{
+						name: 'Angular',
+						url: 'https://img.icons8.com/color/48/000000/angularjs.png',
+					},
 					{
 						name: 'TailwindCSS',
-						url: 'https://lorempixel.com/200/200',
+						url: 'https://img.icons8.com/color/48/000000/tailwind_css.png',
 					},
 					{
 						name: 'Material UI',
-						url: 'https://lorempixel.com/200/200',
+						url: 'https://img.icons8.com/?size=100&id=gFw7X5Tbl3ss&format=png&color=000000',
 					},
 					{
 						name: 'Angular Material',
-						url: 'https://lorempixel.com/200/200',
+						url: 'https://img.icons8.com/color/48/000000/angularjs.png',
 					},
 				]}
 			/>
@@ -42,23 +54,23 @@ const Knowledges: React.FC<KnowledgesProps> = ({}) => {
 				images={[
 					{
 						name: 'NodeJS Express',
-						url: 'https://lorempixel.com/200/200',
+						url: 'https://img.icons8.com/fluency/48/000000/node-js.png',
 					},
 					{
 						name: 'Python Flask',
-						url: 'https://lorempixel.com/200/200',
+						url: 'https://img.icons8.com/color/48/000000/python--v1.png',
 					},
 					{
 						name: 'C# NetCore',
-						url: 'https://lorempixel.com/200/200',
+						url: 'https://img.icons8.com/color/48/000000/net-framework.png',
 					},
 					{
 						name: 'Go Gorilla/Mux',
-						url: 'https://lorempixel.com/200/200',
+						url: 'https://img.icons8.com/?size=100&id=44442&format=png&color=000000',
 					},
 					{
 						name: 'PHP Laravel',
-						url: 'https://lorempixel.com/200/200',
+						url: 'https://img.icons8.com/?size=100&id=lRjcvhvtR81o&format=png&color=000000',
 					},
 				]}
 			/>
@@ -66,33 +78,52 @@ const Knowledges: React.FC<KnowledgesProps> = ({}) => {
 				title='Database'
 				description='I have experience in database administration, working with SQLite, MySQL, SQL Server, PostgreSQL, and MongoDB.'
 				images={[
-					{ name: 'SQLite', url: 'https://lorempixel.com/200/200' },
-					{ name: 'MySQL', url: 'https://lorempixel.com/200/200' },
+					{
+						name: 'SQLite',
+						url: 'https://img.icons8.com/?size=100&id=VMRAbKfEzssG&format=png&color=000000',
+					},
+					{
+						name: 'MySQL',
+						url: 'https://img.icons8.com/?size=100&id=rgPSE6nAB766&format=png&color=000000',
+					},
 					{
 						name: 'SQL Server',
-						url: 'https://lorempixel.com/200/200',
+						url: 'https://img.icons8.com/?size=100&id=laYYF3dV0Iew&format=png&color=000000',
 					},
 					{
 						name: 'PostgreSQL',
-						url: 'https://lorempixel.com/200/200',
+						url: 'https://img.icons8.com/?size=100&id=38561&format=png&color=000000',
 					},
-					{ name: 'MongoDB', url: 'https://lorempixel.com/200/200' },
+					{
+						name: 'MongoDB',
+						url: 'https://img.icons8.com/?size=100&id=bosfpvRzNOG8&format=png&color=000000',
+					},
+					{
+						name: 'Firebase',
+						url: 'https://img.icons8.com/?size=100&id=62452&format=png&color=000000',
+					},
 				]}
 			/>
 			<FlipCard
 				title='DevOps'
 				description='I have experience in DevOps with Docker, Kubernetes, Github Actions and Jenkins.'
 				images={[
-					{ name: 'Docker', url: 'https://lorempixel.com/200/200' },
+					{
+						name: 'Docker',
+						url: 'https://img.icons8.com/?size=100&id=cdYUlRaag9G9&format=png&color=000000',
+					},
 					{
 						name: 'Kubernetes',
-						url: 'https://lorempixel.com/200/200',
+						url: 'https://img.icons8.com/?size=100&id=cvzmaEA4kC0o&format=png&color=000000',
 					},
 					{
 						name: 'Github Actions',
-						url: 'https://lorempixel.com/200/200',
+						url: 'https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=000000',
 					},
-					{ name: 'Jenkins', url: 'https://lorempixel.com/200/200' },
+					{
+						name: 'Jenkins',
+						url: 'https://img.icons8.com/color/48/000000/jenkins.png',
+					},
 				]}
 			/>
 			<FlipCard
@@ -101,20 +132,26 @@ const Knowledges: React.FC<KnowledgesProps> = ({}) => {
 				images={[
 					{
 						name: 'Android',
-						url: 'https://lorempixel.com/200/200',
+						url: 'https://img.icons8.com/fluency/48/000000/android-os.png',
 					},
 					{
 						name: 'React Native',
-						url: 'https://lorempixel.com/200/200',
+						url: 'https://img.icons8.com/ultraviolet/40/000000/react--v1.png',
 					},
-					{ name: 'Flutter', url: 'https://lorempixel.com/200/200' },
+					{
+						name: 'Flutter',
+						url: 'https://img.icons8.com/?size=100&id=7I3BjCqe9rjG&format=png&color=000000',
+					},
 				]}
 			/>
 			<FlipCard
 				title='UI/UX'
 				description='I have experience in UI/UX design, proficient in using Figma for creating intuitive and visually appealing designs.'
 				images={[
-					{ name: 'Figma', url: 'https://lorempixel.com/200/200' },
+					{
+						name: 'Figma',
+						url: 'https://img.icons8.com/color/48/000000/figma--v1.png',
+					},
 				]}
 			/>
 		</div>

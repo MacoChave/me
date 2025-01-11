@@ -30,11 +30,11 @@ const Button: React.FC<ButtonProps> = ({
 	const baseStyle =
 		'px-6 py-2-medium rounded-lg focus:outline-none transition duration-300';
 	const variantStyle: Record<Variant, string> = {
-		primary: 'bg-blue-600 text-white hover:bg-blue-700',
-		secondary: 'bg-gray-200 text-gray-800 hover:bg-gray-300',
-		danger: 'bg-red-600 text-white hover:bg-red-700',
-		warning: 'bg-yellow-600 text-white hover:bg-yellow-700',
-		success: 'bg-green-600 text-white hover:bg-green-700',
+		primary: 'bg-primary text-lightGray',
+		secondary: 'bg-secondary text-darkGray',
+		danger: 'bg-red-600 text-white',
+		warning: 'bg-yellow-600 text-white',
+		success: 'bg-green-600 text-white',
 	};
 
 	const fabStyle = 'w-12 h-12 rounded-full flex items-center justify-center';
@@ -43,7 +43,7 @@ const Button: React.FC<ButtonProps> = ({
 		<button
 			className={`${baseStyle} ${isFab ? fabStyle : ''} ${
 				variantStyle[variant]
-			} ${className}`}
+			} ${className} hover:bg-accent hover:text-darkGray`}
 			disabled={disabled}
 			onClick={onClick}
 			type={type}>
