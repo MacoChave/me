@@ -10,7 +10,7 @@ export type HeaderProps = {
 
 const Header: React.FC<HeaderProps> = ({}) => {
 	return (
-		<div className='w-full h-dvh flex flex-col place-content-center place-items-center gap-8'>
+		<div className='w-full h-dvh flex flex-col place-content-center place-items-center gap-8 bg-header-light dark:bg-header-dark text-text-dark dark:text-text-dark'>
 			<div>
 				<img
 					className='h-36 rounded-full mx-auto'

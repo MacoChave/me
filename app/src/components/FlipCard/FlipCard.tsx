@@ -16,14 +16,16 @@ export type FlipCardProps = {
 
 const FlipCard: React.FC<FlipCardProps> = ({ title, description, images }) => {
 	return (
-		<div className='w-80 bg-lightGray rounded-lg shadow-lg overflow-hidden p-8 group'>
+		<div className='w-80 bg-surface-light dark:bg-surface-dark text-text-light dark:text-text-dark rounded-lg shadow-lg overflow-hidden p-8 group  '>
 			<div className='relative flip-card'>
 				<div className='flex flex-wrap place-content-center place-items-center gap-8 flip-card__front'>
-					<h2 className='text-xl font-bold text-primary'>{title}</h2>
-					<p className='mt-2 text-gray-600'>{description}</p>
+					<h2 className='text-xl font-bold'>{title}</h2>
+					<p className='mt-2 text-textSecondary-light dark:text-text-dark'>
+						{description}
+					</p>
 				</div>
 				<div className='absolute top-0 w-fit h-fit flex flex-wrap place-content-center place-items-center gap-8 flip-card__back'>
-					<h3 className='text-lg font-semibold text-darkGray'>
+					<h3 className='text-lg font-semibold text-textSecondary-light dark:text-text-dark'>
 						{title}
 					</h3>
 					<div className='grid grid-cols-3 gap-4'>

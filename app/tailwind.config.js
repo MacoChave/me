@@ -5,19 +5,40 @@ export default {
 		extend: {
 			colors: {
 				primary: {
-					DEFAULT: '#1E3A8A',
+					DEFAULT: '#003366', // AZUL MARINO
+					dark: '#001f33', // AZUL OSCURO
 				},
 				secondary: {
-					DEFAULT: '#38BDF8',
+					DEFAULT: '#FFD700', // DORADO
+					dark: '#FFC300', // ORO INTENSO
 				},
-				lightGray: {
-					DEFAULT: '#F3F4F6',
+				background: {
+					light: '#FFFFFF', // BLANCO
+					dark: '#121212', // GRIS OSCURO
 				},
-				darkGray: {
-					DEFAULT: '#1F2937',
+				success: {
+					light: '#66CC99', // VERDE MENTA
+					dark: '#2A9D70', // VERDE ESMERALDA
 				},
-				accent: {
-					DEFAULT: '#10B981',
+				text: {
+					light: '#333333', // GRIS OSCURO
+					dark: '#CCCCCC', // GRIS CLARO
+				},
+				textSecondary: {
+					light: '#666666', // GRIS CLARO
+					dark: '#A3A3A3', // GRIS SUAVE
+				},
+				header: {
+					light: '#003366', // AZUL MARINO
+					dark: '#001f33', // AZUL OSCURO
+				},
+				surface: {
+					light: '#F7F7F7', // GRIS CLARO
+					dark: '#1E1E1E', // GRIS MEDIO
+				},
+				footer: {
+					light: '#CCCCCC', // GRIS CLARO
+					dark: '#1E1E1E', // GRIS MEDIO
 				},
 			},
 		},

@@ -28,12 +28,6 @@ const contactLinks = [
 		variant: 'warning',
 		icon: 'fab fa-blogger-b',
 	},
-	// {
-	// 	label: 'Email',
-	// 	href: 'mailto:macochave@gmail.com',
-	// 	variant: 'danger',
-	// 	icon: 'fa-solid fa-inbox',
-	// },
 ];
 
 export type FooterProps = {
@@ -42,7 +36,7 @@ export type FooterProps = {
 
 const Footer: React.FC<FooterProps> = ({}) => {
 	return (
-		<div className='h-80 bg-gray-800 text-white py-6 flex flex-col place-content-center place-items-center'>
+		<div className='h-80 bg-footer-light dark:bg-footer-dark text-textSecondary-light dark:text-textSecondary-dark py-6 flex flex-col place-content-center place-items-center'>
 			<div className='container mx-auto text-center'>
 				<p className='text-lg mb-4'>Connect with me:</p>
 				<div className='flex justify-center space-x-4'>
